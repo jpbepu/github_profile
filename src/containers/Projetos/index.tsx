@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
+import Titulo from "../../components/Titulo";
 
-const Repos = () => {
+const Projetos = () => {
 
     const [repos, setRepos] = useState([])
 
@@ -19,7 +20,8 @@ const Repos = () => {
     return (
 
         <>
-            <h1>Repos</h1>
+            <Titulo>Projetos</Titulo>
+            
             <ul>
 
                 {repos.map( ({name, language, html_url, id}) => (
@@ -42,4 +44,4 @@ const Repos = () => {
 }
 
 
-export default Repos
+export default Projetos

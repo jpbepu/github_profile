@@ -1,11 +1,16 @@
+import { Titulo as TituloStyle } from './styles'
 
-type Props = {
-    valor: string;
+
+export type Props = {
+    children: string;
+    fontSize?: number;
 }
 
 
-const Titulos = (props) =>(
-    <span>{PaymentResponse.valor}</span>
+const Titulo = (props: Props) =>(
+    <TituloStyle fontSize={props.fontSize}>
+        {props.children}
+    </TituloStyle>
 )
 
-export default Titulos
+export default Titulo
