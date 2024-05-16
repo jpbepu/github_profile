@@ -5,9 +5,9 @@ import { Props } from '.';
 
 export const Titulo = styled.h3<Props>`
 
-    color: #282A35;
+    color: #E6EDF3;
     font-size: ${(props) => (props.fontSize? props.fontSize + 'px' : '14px')};
     font-weight: bold;
-    background-color: aliceblue;
+    margin-bottom: 16px;
 
 `

@@ -7,10 +7,12 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
     }
 
     body{
-        padding-top: 80px;
+        background-color: #0D1117;
+        overflow-x: hidden;
     }
 
 `
@@ -24,9 +26,14 @@ export const Container = styled.div`
     width: 100%;
     margin: 0 auto;
 
-    img{
-        max-width: 200px;
-        border-radius: 50%;
+    @media (max-width: 1064px) {
+        max-width: 80%;
+
+    }
+
+    @media (max-width: 400px) {
+        max-width: 100%;
+
     }
 
 `
