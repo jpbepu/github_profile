@@ -12,18 +12,20 @@ export const PerfilWrapper = styled.div`
     background-color: #0D1117;
     display: flex;
     flex-direction: row;
+    box-shadow: 5px 5px rgb(1,1,1,0.5);
 
     .img-perfil{
         width: 300px;
-        filter: drop-shadow(5px 5px 20px rgb(1,1,1,0.3));
+        filter: drop-shadow(0px 0px 10px #D93F59);
     }
     
     
-    @media (max-width: 940px) {
+    @media (max-width: 1080px) {
         margin-top: 0;
         border: none;
         flex-direction: column;
         align-items: center;
+        box-shadow: none;
 
 
         .img-perfil{

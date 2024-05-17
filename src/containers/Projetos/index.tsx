@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import Titulo from "../../components/Titulo";
+import Paragrafo from "../../components/Paragrafo";
+import { Card, ListaProjetos, ReposWrapper, RepoLink, Linguagem } from "./styles";
 
 const Projetos = () => {
 
@@ -15,28 +17,34 @@ const Projetos = () => {
     
     }, []);
 
-    console.log(repos)
+
+
 
     return (
 
-        <>
-            <Titulo>Projetos</Titulo>
+        <ReposWrapper>
+            <Titulo fontSize={24}>Repositórios</Titulo>
             
-            <ul>
+            <ListaProjetos>
 
-                {repos.map( ({name, language, html_url, id}) => (
-                    <li key={id}>
-                        <b>Nome:</b> {name} <br />
-                        <b>Linguagem Principal:</b> {language} <br />
-                        <a target="_blank" href={html_url}>Ir Para o repositorio</a>
-                        <br />
+                {repos.map( ({name, language, html_url, description, id}) => (
+                    
+                    <Card key={id}>
                         
-                    </li>
+                        <div>
+                            <Titulo fontSize={16}>{name} </Titulo>
+                            <Linguagem> {language} </Linguagem>
+                        </div>
+
+                        <Paragrafo> {description}</Paragrafo>
+                        <RepoLink target="_blank" rel='noreferrer' href={html_url}>Ver no Github</RepoLink>
+
+                    </Card>
                     
                 ))}
 
-            </ul>
-        </>
+            </ListaProjetos>
+        </ReposWrapper>
 
 
     )

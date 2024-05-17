@@ -2,7 +2,7 @@ import { P } from './styles'
 
 
 export type Props = {
-    children: string;
+    children: string | string[];
     type?: 'primary' | 'secondary';
 }
 

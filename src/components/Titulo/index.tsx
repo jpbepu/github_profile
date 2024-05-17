@@ -2,7 +2,7 @@ import { Titulo as TituloStyle } from './styles'
 
 
 export type Props = {
-    children: string;
+    children: string | string[] | Element;
     fontSize?: number;
 }
 
