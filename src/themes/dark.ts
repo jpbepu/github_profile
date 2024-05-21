@@ -6,7 +6,7 @@ const darkTheme = {
     corBorda: '#30363D',
     corSombra: '#272c31',
     corBtn: '#E6EDF3',
-    corPerfil: '#D93F59'
+    corPerfil: '#D93F59',
     
 }
 

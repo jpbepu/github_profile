@@ -1,10 +1,10 @@
 import Titulo from "../../components/Titulo"
 import Paragrafo from "../../components/Paragrafo"
-import { PerfilWrapper, GithubSecao, Sobre } from "./styles"
-import { type } from "os"
+import { PerfilWrapper, GithubSecao, Sobre, ThemeBtn } from "./styles"
 
 type Props = {
     changeTheme: () => void;
+    icon: string;
 }
 
 const Perfil = (props: Props) =>(
@@ -16,10 +16,13 @@ const Perfil = (props: Props) =>(
         </div>
         <Sobre>
             <Titulo fontSize={36}>João Pedro Bepu
-            
-            <button onClick={props.changeTheme}>Trocar tema</button>
-            
+            <ThemeBtn onClick={props.changeTheme}>
+                <img src={props.icon} alt="tema dark" />
+            </ThemeBtn>
             </Titulo>
+
+
+
             <Paragrafo>
                 Tenho um interesse enorme por design e tudo 
                 o que envolve código! Formado em Design Gráfico pela ESPM, atualmente estou

@@ -83,6 +83,22 @@ export const GithubSecao = styled.div`
 
     }
 
-
-
 ` 
+
+export const ThemeBtn = styled.button`
+
+    padding: 8px;
+    margin-left: 16px;
+    border: solid 0px ${props => props.theme.corBorda};
+    background-color: ${props => props.theme.corFundo};
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    img{
+        width: 100%;
+    }
+
+
+`

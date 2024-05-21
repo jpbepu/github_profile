@@ -8,6 +8,9 @@ import darkTheme from './themes/dark';
 import lightTheme from './themes/light';
 import { useState } from 'react';
 
+import moon from './assets/moon.png'
+import sun from './assets/sun.png'
+
 
 
 function App() {
@@ -25,7 +28,12 @@ function App() {
 
         <Container>
 
-          <Perfil changeTheme={changeTheme} />
+          <Perfil
+            changeTheme={changeTheme}
+            icon={isDark ? moon : sun}
+          />
+          
+
           <Projetos />
 
         </Container>
