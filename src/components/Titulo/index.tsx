@@ -1,8 +1,9 @@
+import { ReactNode } from 'react';
 import { Titulo as TituloStyle } from './styles'
 
 
 export type Props = {
-    children: string | string[] | Element;
+    children: string | ReactNode;
     fontSize?: number;
 }
 

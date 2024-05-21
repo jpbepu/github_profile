@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        background-color: #0D1117;
+        background-color: ${props => props.theme.corFundo};
         overflow-x: hidden;
     }
 

@@ -7,16 +7,16 @@ export const PerfilWrapper = styled.div`
 
     margin-top: 80px;
     padding: 16px;
-    border: solid 1px #30363D;
+    border: solid 1px ${props => props.theme.corBorda};
     border-radius: 16px;
-    background-color: #0D1117;
+    background-color: ${props => props.theme.corFundo};
     display: flex;
     flex-direction: row;
-    box-shadow: 5px 5px rgb(1,1,1,0.5);
+    box-shadow: 5px 5px ${props => props.theme.corSombra};
 
     .img-perfil{
         width: 300px;
-        filter: drop-shadow(0px 0px 10px #D93F59);
+        filter: drop-shadow(0px 0px 10px ${props => props.theme.corPerfil});
     }
     
     

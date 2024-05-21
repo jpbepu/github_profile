@@ -18,10 +18,10 @@ export const ListaProjetos = styled.ul`
 
 export const Card = styled.li`
 
-    border: solid 1px #30363D;
+    border: solid 1px ${props => props.theme.corBorda};
     border-radius: 16px;
     padding: 16px;
-    box-shadow: 5px 5px 0px;
+    box-shadow: 5px 5px 0px ${props => props.theme.corSombra};
 
     div{
         display: flex;
@@ -40,16 +40,16 @@ export const RepoLink = styled.a`
 
     display: inline-block;
     padding: 4px 8px;
-    border: solid 1px #30363D;
+    border: solid 1px ${props => props.theme.corBorda};
     border-radius: 4px;
     text-decoration: none;
-    color:lightgrey;
+    color: ${props => props.theme.corParagrafo};
 
     transition: 300ms;
 
     &:hover{
-        background-color: aliceblue;
-        color: #0D1117;
+        background-color: ${props => props.theme.corBtn};
+        color: ${props => props.theme.corFundo};
     }
 
 `
