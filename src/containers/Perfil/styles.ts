@@ -83,7 +83,14 @@ export const GithubSecao = styled.div`
 
     }
 
-` 
+`
+
+export const NameWrapper = styled.div`
+
+    display: flex;
+    justify-content: space-between;
+
+`
 
 export const ThemeBtn = styled.button`
 

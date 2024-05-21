@@ -1,6 +1,6 @@
 import Titulo from "../../components/Titulo"
 import Paragrafo from "../../components/Paragrafo"
-import { PerfilWrapper, GithubSecao, Sobre, ThemeBtn } from "./styles"
+import { PerfilWrapper, GithubSecao, Sobre, ThemeBtn, NameWrapper } from "./styles"
 
 type Props = {
     changeTheme: () => void;
@@ -15,11 +15,14 @@ const Perfil = (props: Props) =>(
             
         </div>
         <Sobre>
-            <Titulo fontSize={36}>João Pedro Bepu
-            <ThemeBtn onClick={props.changeTheme}>
-                <img src={props.icon} alt="tema dark" />
-            </ThemeBtn>
-            </Titulo>
+
+            <NameWrapper>
+                <Titulo fontSize={36}>João Pedro Bepu</Titulo>
+                <ThemeBtn onClick={props.changeTheme}>
+                    <img src={props.icon} alt="mudar tema" />
+                </ThemeBtn>
+            </NameWrapper>
+
 
 
 
